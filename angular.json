@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "scss"
         }
       },
       "root": "",
@@ -28,9 +28,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss",
+              "src/app/@theme/css/style.min.css",
+              "src/app/@theme/css/bootstrap.min.css",
+              "src/app/@theme/css/materialdesignicons.min.css",
+              "src/app/@theme/css/pe-icon-7-stroke.css",
+              "src/app/@theme/css/tiny-slider.css",
+              "src/app/@theme/css/style.min.css.map"
             ],
-            "scripts": []
+            "scripts": [
+              "src/app/@theme/js/app.js",
+              "src/app/@theme/js/filter.init.js",
+              "src/app/@theme/js/bootstrap.bundle.min.js",
+              "src/app/@theme/js/masonry.pkgd.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,7 +103,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.scss"
             ],
             "scripts": []
           }
@@ -123,6 +134,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ecommerce-angular"
+    }
+  },
+  "defaultProject": "ecommerce-angular",
+  "cli": {
+    "analytics": "32060a71-0ccb-444f-815b-8c978cc980e0"
+  }
 }
